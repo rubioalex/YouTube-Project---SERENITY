@@ -1,0 +1,242 @@
+.header {
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 28px;
+    cursor: pointer;
+}
+
+.serenity {
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-left: 10px;
+    transition: opacity 0.2s;
+    letter-spacing: 2px;
+}
+
+.serenity:hover {
+    opacity: 60%;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.search-button {
+    height: 34px;
+    width: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(229, 229, 229, 0.401);
+    border: 1px solid rgba(156, 154, 154, 0.586);
+    margin-left: -1px;
+    margin-right: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.search-button .tooltip {
+    position: absolute;
+    background-color: lightgray;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    pointer-events: none;
+
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.search-button:hover .tooltip {
+    opacity: 1;
+}
+
+.search-button:hover {
+    background-color: rgba(229, 229, 229, 0.579);
+}
+
+.search-img {
+    width: 28px;
+    opacity: 0.7;
+}
+
+.voice-div, .upload-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.voice-div .tooltip,
+.upload-div .tooltip {
+    font-size: 12px;
+    background-color: lightgray;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 2px;
+
+    position: absolute;
+    bottom: -29px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.upload-div:hover .tooltip {
+    opacity: 1;
+}
+
+.voice-div:hover .tooltip {
+    opacity: 1;
+}
+
+#create {
+    bottom: -34px;
+}
+
+.voice-img {
+    width: 34px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.voice-img:hover {
+    opacity: 65%;
+}
+
+.search-bar {
+    flex: 1;
+    height: 30px;
+    padding-left: 15px;
+    font-size: 15px;
+    border-color: red;
+    border-width: 1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 20px;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.1);
+    width: 0;
+}
+
+.search-bar::placeholder {
+    font-size: 15px;
+}
+
+.right-section {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.upload-icon {
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.upload-icon:hover {
+    transform: scale(1.2);
+}
+
+.notifications-icon {
+    height: 22px;
+    cursor: pointer;
+    transition: height 0.2s;
+}
+
+.notifications-container {
+    position: relative;
+    transition: transform 0.15s;
+}
+
+.notifications-container:hover {
+    transform: scale(1.15);
+    
+}
+
+.notifications-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(228, 6, 6);
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.notifications-whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notifications-whole .tooltip {
+    background-color: lightgray;
+    padding: 5px 8px;
+    border-radius: 2px;
+    
+    font-size: 12px;
+    color: white;
+
+    pointer-events: none;
+
+    position: absolute;
+    bottom: -18.5px;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.notifications-whole:hover .tooltip {
+    opacity: 1;
+}
+
+
+.profile-icon {
+    height: 35px;
+    border-radius: 17px;
+    cursor: pointer;
+}

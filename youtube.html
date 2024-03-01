@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles/header-styles.css">
+        <link rel="stylesheet" href="styles/video-styles.css">
+        <link rel="stylesheet" href="styles/general-styles.css">
+        <link rel="stylesheet" href="styles/sidebar-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="left-section">
+                <img class="menu-icon" src="icons/hamburger-menu.png"alt="menu-icon">
+                <img class="youtube-logo" src="icons/youtube.png" alt="YouTube">
+                <p class="serenity">Serenity</p>
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-button">
+                    <img class="search-img" src="icons/search.png" alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+                <div class="voice-div">
+                    <img class="voice-img" src="icons/voice.png" alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </div>
+                
+
+            </div>
+            <div class="right-section">
+                <div class="upload-div">
+                    <img class="upload-icon"src="icons/video.png" alt="upload">
+                    <div class="tooltip" id="create">Create</div>
+                </div>
+                <div class="notifications-whole">
+                    <div class="notifications-container">
+                        <img class="notifications-icon" src="icons/notification.png" alt="notifications">
+                        <div class="notifications-count">3</div>
+                    </div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="profile-icon" src="icons/profile-icon.jpg" alt="profile">
+            </div>
+            
+        </header>
+
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.png" alt="home-icon">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/direction.png" alt="home-icon">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subscribe.png" alt="home-icon">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/play.png" alt="home-icon">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/nature.png" alt="home-icon">
+                <div>Serenity Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/books.png" alt="home-icon">
+                <div>Library</div>
+            </div>
+        </nav>
+        
+        <main>
+            <section class="video-grid">
+    
+                <!-- VIDEO 1 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/calming-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">3:02:44</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-1.jpg" alt="profile-picture">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Calming Inner Anger Music, Beautiful Relaxing Music
+                                For Stress Relief
+                            </p>
+                
+                            <p class="video-author">
+                                Beautiful Melodies &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                18.2M views &#8226; 8 months ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <!-- VIDEO 2 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/chakra-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">5:55:05</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-2.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Ethereal Meditative Space Ambient - 
+                                Relaxing Ambient Music for Sleep
+                            </p>
+                
+                            <p class="video-author">
+                                Eternal Depth &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                674K views &#8226; 1 month ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- VIDEO 3 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/salah-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">4:55</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img id="liv-pic" class="profile-picture" src="images/liverpool-profile-pic.jpg" alt="profile-picture">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Mo. Salah Returns With One Goal and One Assist
+                                in 4-1 VS Brentford
+                            </p>
+                
+                            <p class="video-author">
+                                Liverpool FC &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                104K views &#8226; 16 hours ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <!-- VIDEO 4 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/stillness-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">1:11:11</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-3.jpg" alt="profile-pic">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                STILLNESS | Soothing Meditative Ambient Music -
+                                Dive into Presence
+                            </p>
+                
+                            <p class="video-author">
+                                Tizl Ambient
+                            </p>
+                
+                            <p class="video-stats">
+                                18K views &#8226; 3 weeks ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- VIDEO 5 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/wrangler-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">18:23</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-4.jpg" alt="profile-picture">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                You Messed Up...Now What?
+                            </p>
+                
+                            <p class="video-author">
+                                Dry Creek Wrangler School
+                            </p>
+                
+                            <p class="video-stats">
+                                655K views &#8226; 11 months ago
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <!-- VIDEO 6 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/discipline-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">6:21</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-5.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                discipline.
+                            </p>
+                
+                            <p class="video-author">
+                                F R I E N D
+                            </p>
+                
+                            <p class="video-stats">
+                                905K views &#8226; 2 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 7 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/study-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">11:55:00</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-6.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Music that makes u more inspired to study & work...
+                            </p>
+                
+                            <p class="video-author">
+                                Little Soul &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                7.6M views &#8226; 5 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 8 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/tibet-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">1:00:01</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-7.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Tibet - Healing Ethereal Ambient
+                                Meditation - Relaxing Sleep...
+                            </p>
+                
+                            <p class="video-author">
+                                Eternal Depth &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                115K views &#8226; 4 weeks ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 9 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/presence-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">11:23</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-8.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                A VULNERABLE MAN - choosing
+                                to be present, grateful and free
+                            </p>
+                
+                            <p class="video-author">
+                                Reflections of Life
+                            </p>
+                
+                            <p class="video-stats">
+                                507K views &#8226; 2 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 10 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/mooji-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">21:32</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img id="mooji"class="profile-picture" src="images/profile-picture-9.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Peace begins with you
+                            </p>
+                
+                            <p class="video-author">
+                                Mooji &#10003;
+                            </p>
+                
+                            <p class="video-stats">
+                                1M views &#8226; 3 years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 11 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/css-animations-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">21:22</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-10.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Learn CSS Animations in 20 Minutes -
+                                For Beginners
+                            </p>
+                
+                            <p class="video-author">
+                                Slaying the Dragon
+                            </p>
+                
+                            <p class="video-stats">
+                                794K views &#8226; 1 year ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIDEO 12 -->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <img class ="thumbnail"src="images/be-a-man-thumbnail.webp" alt="thumbnail">
+                        <div class="video-time">2:06</div>
+                    </div>
+        
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="images/profile-picture-11.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Be a man.
+                            </p>
+                
+                            <p class="video-author">
+                                KrueEU
+                            </p>
+                
+                            <p class="video-stats">
+                                658K views &#8226; 2 months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
