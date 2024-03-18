@@ -9,7 +9,7 @@
 .thumbnail:hover {
     box-shadow: 3px 3px 15px rgb(87, 0, 0);
     border-radius: 10px;
-    transform: scale(1.02)
+    transform: scale(1.02);
 }
 
 
